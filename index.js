@@ -96,6 +96,10 @@ app.get("/listings/menu", (req, res) => {
   res.render("listings/menu"); // renders menu.ejs
 });
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
