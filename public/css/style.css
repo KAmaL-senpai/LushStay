@@ -1,0 +1,271 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: #fff;
+}
+
+.fa-house-user {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+  font-size: 1.2rem !important;
+}
+
+/* footer */
+
+.f-info-links a,
+.icon a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 2rem;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: gainsboro;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cards */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+/* Card Effects */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: #fff;
+  color: black;
+}
+.card-img-overlay {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.add-btn,
+.update-btn,
+.delete-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Show Page */
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+}
+
+.show-card {
+  padding: 0 0;
+}
+
+.icon {
+  display: inline-block;
+}
+
+/* Map Styling */
+#map {
+  height: 400px;
+  width: 80vh;
+}
+
+/* Filter styling */
+#filter-container {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  padding-right: 2rem !important;
+}
+
+#filters {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  padding-right: 40px; /* Right padding is always present */
+  align-items: center;
+}
+
+#filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter {
+  flex: 0 0 auto;
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+  padding: 10px;
+  opacity: 0.7;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(169, 166, 166, 0.2);
+  font-size: 1.1rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+#left-btn {
+  left: 0;
+  display: none; /* Hidden initially */
+}
+
+#right-btn {
+  /* padding-left: rem !important; */
+  right: 0;
+  align-self: flex-end;
+}
+
+/* This class will be added dynamically when left arrow is visible */
+.left-shadow {
+  padding-left: 40px; /*Creates space*/
+  mask-image: linear-gradient(to right, transparent, black 10%, black 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 100%
+  );
+}
+
+/* Form Category styling */
+select.form-select {
+  max-width: 100%; /* Ensures it stays within the container */
+  overflow-y: auto;
+  display: block;
+}
+
+#category {
+  cursor: pointer;
+}
+
+/* Filter Styling when clicked */
+.filter.selected {
+  border: 2px solid black;
+  background-color: #eee;
+  border-radius: 0.5rem;
+}
+
+.form-switch {
+  align-items: center;
+  /* flex-grow: 1; */
+  padding-right: 10rem;
+}
+
+.toggle {
+  display: none;
+}
+.tax-toggle {
+  border: 1px solid black;
+  border-radius: 1rem;
+  height: 3.5rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* mapStyling */
+
+#map {
+  width: 100% !important;
+  height: 350px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  #map {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #map {
+    height: 200px;
+  }
+}
+
+
+/* Search Function Styling*/
+.search-btn{
+  background-color: #fe424d !important;
+  color: #fff !important;
+  border-radius: 25px !important;
+  padding: 0 1rem 0 1rem !important;
+}
+
+.search-input{
+  border-radius: 25px !important;
+  padding: .5rem 1rem .5rem 3rem !important;
+  font-size: 1rem !important;
+}

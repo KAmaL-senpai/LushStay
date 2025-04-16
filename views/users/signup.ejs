@@ -1,0 +1,33 @@
+<% layout("layouts/boilerplate.ejs")%>
+
+<div class="row mt-3">
+  <h1 class="col-6 offset-3">Tourism</h1>
+  <div class="col-6 offset-3">
+    <form action="/signup" method="post" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" name="username" class="form-control" required />
+        <div class="invalid-feedback">Enter an Username</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" name="email" class="form-control" required />
+        <div class="invalid-feedback">Enter an email</div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" required />
+        <div class="invalid-feedback">Enter an Password</div>
+      </div>
+      <a
+        href="/login"
+        class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+      >
+        If Already have an Account Login</a
+      >
+      <br />
+      <br />
+      <button class="btn btn-success">Signup</button>
+    </form>
+  </div>
+</div>

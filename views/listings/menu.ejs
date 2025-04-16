@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .full {
+        position: relative;
+        background-color: rgb(223, 87, 87);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Top-left icon */
+      .icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      .icon a {
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+
+      ul li {
+        margin: 10px 0;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="full">
+      <!-- Back icon in top-left -->
+      <div class="icon">
+        <a href="/listings"><i class="fa-solid fa-arrow-left"></i></a>
+      </div>
+
+      <!-- Centered menu -->
+      <ul>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/listings">Home</a></li>
+        <li><a href="/listings">Home</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
