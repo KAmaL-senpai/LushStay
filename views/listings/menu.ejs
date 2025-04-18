@@ -63,10 +63,14 @@
 
       <!-- Centered menu -->
       <ul>
+        <li><a href="/listings">Home</a></li>
+        <% if(!currUser) { %>
         <li><a href="/signup">Signup</a></li>
         <li><a href="/login">Login</a></li>
-        <li><a href="/listings">Home</a></li>
-        <li><a href="/listings">Home</a></li>
+        <%}%> <% if (currUser) {%>
+        <li><a href="/logout">Logout</a></li>
+        <% } %>
+        <li><a href="/listings/new">LushStay Your Home</a></li>
       </ul>
     </div>
   </body>

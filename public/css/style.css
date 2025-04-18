@@ -255,23 +255,69 @@ select.form-select {
   }
 }
 
-
 /* Search Function Styling*/
-.search-btn{
+.search-btn {
   background-color: #fe424d !important;
   color: #fff !important;
   border-radius: 25px !important;
   padding: 0 1rem 0 1rem !important;
 }
 
-.search-input{
+#searchIcon {
+  display: none;
+}
+
+.search-input {
   border-radius: 25px !important;
-  padding: .5rem 1rem .5rem 3rem !important;
+  padding: 0.5rem 1rem 0.5rem 3rem !important;
   font-size: 1rem !important;
 }
 
-@media  screen and (max-width:470px) {
-  .tax-toggle{
+@media screen and (max-width: 470px) {
+  .tax-toggle {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search {
+    width: 250px !important;
+  }
+  .search form input::placeholder {
+    color: transparent;
+  }
+  #searchText {
+    display: none;
+  }
+  #searchIcon {
+    display: inline;
+  }
+  .search-btn {
+    padding: 0 1.5rem 0 0 0.6rem !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search {
+    width: 150px !important;
+  }
+  .search .search-btn {
+    width: 1rem !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .search-btn {
+    padding: 0 1.5rem 0 0.5rem !important;
+  }
+}
+@media screen and (max-width: 281px) {
+  .search {
+    display: none !important;
   }
 }
